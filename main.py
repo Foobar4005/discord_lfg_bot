@@ -43,7 +43,7 @@ async def on_message(message):
     if message.author == client.user:
         return
     
-    if '<@&1121830106982264843>' in user_message.lower():#Checks if user entered '@lfg'
+    if '<@&1121830106982264843>' in user_message:#Checks if user entered '@lfg'
         #Store data in a dict
         data = {
             'user': username,#Store who sent message
