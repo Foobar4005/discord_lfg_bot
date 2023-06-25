@@ -57,7 +57,6 @@ async def on_message(message):
         cur.execute("INSERT INTO lfg (datetime, user, channel, message) VALUES (?, ?, ?, ?)", (data['time'], data['user'], data['channel'], data['message']))
         con.commit()
 
-        await message.channel.send(f'Ping registered, {username}')
         return
     
     if user_message.lower() == 'hello':
