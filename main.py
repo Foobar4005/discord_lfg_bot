@@ -58,11 +58,6 @@ async def on_message(message):
         con.commit()
 
         return
-    
-    if user_message.lower() == 'hello':
-        await message.channel.send(f'Hello {username}')
-        return
-    
 
 
 client.run(TOKEN)
